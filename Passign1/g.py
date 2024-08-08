@@ -7,7 +7,7 @@ board_size = 8
 # Create an 8x8 grid initialized with zeros
 chessboard = np.zeros((board_size, board_size))
 
-# Fill the grid with black and white squares
+ # Fill the grid with black and white squares
 # We use mod operation to alternate colors
 for row in range(board_size):
     for col in range(board_size):
