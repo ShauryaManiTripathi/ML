@@ -4,7 +4,6 @@ def openfile(name):
     print("File created successfully")
     return
 
-
 import random
 def fillfile(name,count):
     f = open(name, 'w')
