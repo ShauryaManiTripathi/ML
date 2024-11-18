@@ -1,0 +1,8 @@
+2024-11-18 15:22:52,877 - WARNING -  * Debugger is active!
+2024-11-18 15:22:52,877 - INFO -  * Debugger PIN: 107-463-342
+2024-11-18 15:23:24,329 - INFO - 127.0.0.1 - - [18/Nov/2024 15:23:24] "GET / HTTP/1.1" 200 -
+2024-11-18 15:23:24,496 - INFO - 127.0.0.1 - - [18/Nov/2024 15:23:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-18 15:23:40,855 - INFO - Received user input: {'age': 19, 'sex': 'female', 'bmi': 26.0, 'children': 0, 'smoker': 'yes', 'region': 'southwest'}
+2024-11-18 15:23:40,861 - INFO - Predicted charges: $24992.43
+2024-11-18 15:23:40,864 - INFO - 127.0.0.1 - - [18/Nov/2024 15:23:40] "POST / HTTP/1.1" 200 -
+2024-11-18 15:23:44,790 - INFO - 127.0.0.1 - - [18/Nov/2024 15:23:44] "GET / HTTP/1.1" 200 -

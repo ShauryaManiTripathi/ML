@@ -1,0 +1,76 @@
+================================================================================
+BEST MODEL SUMMARY REPORT
+Generated on: 2024-11-18 15:30:19
+================================================================================
+
+MODEL OVERVIEW
+--------------------------------------------------
+Best Performing Model: Lasso
+
+Optimal Hyperparameters:
+{
+  "alpha": 100.0,
+  "selection": "random"
+}
+
+PERFORMANCE METRICS
+--------------------------------------------------
+Overall Metrics:
+Mean Squared Error (MSE):     37057100.2608
+Root Mean Squared Error:       6082.7349
+Mean Absolute Error (MAE):     4194.1682
+R-squared Score (R²):         0.7400
+
+CROSS-VALIDATION PERFORMANCE
+--------------------------------------------------
+Fold-wise Results for Best Parameters:
+
+            mse         rmse          mae        r2  fold
+0  3.415854e+07  5844.530506  4216.456691  0.779975     1
+1  3.727865e+07  6105.624514  4214.798763  0.739172     2
+2  3.350921e+07  5788.713875  4107.919243  0.795234     3
+3  4.122074e+07  6420.338345  4369.139462  0.635432     4
+4  3.911836e+07  6254.467280  4062.526700  0.750215     5
+
+
+Metric Stability (Standard Deviations):
+MSE Standard Deviation:    2919692.4650
+RMSE Standard Deviation:   239.6588
+MAE Standard Deviation:    106.1185
+R² Standard Deviation:     0.0560
+
+MODEL INFORMATION
+--------------------------------------------------
+Number of Features: 9
+
+Features Used:
+1. index
+2. age
+3. sex
+4. bmi
+5. children
+6. smoker
+7. region_northwest
+8. region_southeast
+9. region_southwest
+
+RECOMMENDATIONS AND NOTES
+--------------------------------------------------
+1. Model Usage:
+   - The model requires standardized input features
+   - Use the saved scaler before making predictions
+
+2. Hyperparameter Insights:
+   - alpha: 100.0
+   - selection: random
+
+3. Performance Characteristics:
+   - The model explains 74.00% of the variance in the target variable
+   - Average prediction error (MAE): 4194.17 units
+
+MODEL VERSION INFORMATION
+--------------------------------------------------
+Training Date: 2024-11-18 15:30:19
+Model File: best_linear_model.pkl
+Feature Columns File: feature_columns.pkl
+Encoders File: encoders.pkl

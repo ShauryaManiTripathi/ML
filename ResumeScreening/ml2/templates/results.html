@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Ranked Resumes</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Resume Name</th>
+            <th>Similarity Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, score in ranked_resumes %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ "%.2f"|format(score) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/" class="btn btn-secondary mt-3">Upload More Files</a>
+{% endblock %}

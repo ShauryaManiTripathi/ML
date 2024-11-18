@@ -1,0 +1,11 @@
+2024-11-18 15:28:02,441 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-18 15:28:02,441 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-18 15:28:02,444 - INFO -  * Restarting with watchdog (inotify)
+2024-11-18 15:28:03,292 - WARNING -  * Debugger is active!
+2024-11-18 15:28:03,292 - INFO -  * Debugger PIN: 107-463-342
+2024-11-18 15:28:32,281 - INFO - 127.0.0.1 - - [18/Nov/2024 15:28:32] "GET / HTTP/1.1" 200 -
+2024-11-18 15:28:32,384 - INFO - 127.0.0.1 - - [18/Nov/2024 15:28:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-18 15:28:49,539 - INFO - Received user input: {'age': 19, 'sex': 'male', 'bmi': 29.0, 'children': 0, 'smoker': 'no', 'region': 'southeast'}
+2024-11-18 15:28:49,547 - INFO - Predicted charges: $2558.37
+2024-11-18 15:28:49,550 - INFO - 127.0.0.1 - - [18/Nov/2024 15:28:49] "POST / HTTP/1.1" 200 -

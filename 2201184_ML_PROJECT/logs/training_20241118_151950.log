@@ -1,0 +1,16 @@
+2024-11-18 15:19:50,905 - INFO - Loading dataset from insurance.csv
+2024-11-18 15:19:50,909 - INFO - Starting preprocessing pipeline
+2024-11-18 15:19:50,913 - INFO - Creating enhanced visualizations
+2024-11-18 15:19:50,913 - INFO - Creating pairplot with hue
+2024-11-18 15:19:56,206 - INFO - Creating correlation heatmap
+2024-11-18 15:19:56,712 - INFO - Creating violin plots
+2024-11-18 15:19:56,727 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-11-18 15:19:56,732 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-11-18 15:19:57,206 - INFO - 
+Evaluating Linear Regression
+2024-11-18 15:19:57,229 - INFO - 
+Evaluating Ridge
+2024-11-18 15:19:57,676 - INFO - 
+Evaluating Lasso
+2024-11-18 15:19:57,880 - INFO - 
+Evaluating ElasticNet

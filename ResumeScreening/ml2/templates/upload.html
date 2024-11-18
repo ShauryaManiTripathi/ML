@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Upload Job Description and Resumes</h1>
+<form method="post" enctype="multipart/form-data" action="/">
+    <div class="mb-3">
+        <label for="job_description" class="form-label">Job Description (PDF):</label>
+        <input type="file" name="job_description" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="resumes" class="form-label">Resumes (PDFs):</label>
+        <input type="file" name="resumes" class="form-control" multiple required>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+{% endblock %}

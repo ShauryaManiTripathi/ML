@@ -1,0 +1,11 @@
+2024-11-18 15:14:26,371 - INFO - Loading dataset from insurance.csv
+2024-11-18 15:14:26,376 - INFO - Starting preprocessing pipeline
+2024-11-18 15:14:26,380 - INFO - Creating pairplot
+2024-11-18 15:14:30,168 - INFO - 
+Evaluating Linear Regression
+2024-11-18 15:14:30,217 - INFO - 
+Evaluating Ridge
+2024-11-18 15:14:30,697 - INFO - 
+Evaluating Lasso
+2024-11-18 15:14:30,898 - INFO - 
+Evaluating ElasticNet

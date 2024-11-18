@@ -1,0 +1,70 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Prediction Result</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.24.1/plotly.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Result Card -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+                    <h1 class="text-2xl font-bold text-white">Premium Prediction Results</h1>
+                </div>
+
+                <!-- Content -->
+                <div class="p-6 space-y-6">
+                    <!-- Prediction Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Premium Amount -->
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h2 class="text-lg font-medium text-gray-600 mb-2">Predicted Premium</h2>
+                            <p class="text-4xl font-bold text-blue-600">{{ charges }}</p>
+                        </div>
+
+                        <!-- Premium Status -->
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h2 class="text-lg font-medium text-gray-600 mb-2">Premium Status</h2>
+                            <p class="text-2xl font-bold {{ 'text-red-600' if premium_status == 'High' else 'text-green-600' }}">
+                                {{ premium_status }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Model Info -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h2 class="text-lg font-medium text-gray-600 mb-2">Model Information</h2>
+                        <p class="text-gray-700">Prediction made using: <span class="font-semibold">{{ model_name }}</span></p>
+                    </div>
+
+                    <!-- Feature Importance Plot -->
+                    {% if feature_importance_plot %}
+                    <div class="bg-white rounded-lg p-6">
+                        <h2 class="text-lg font-medium text-gray-600 mb-4">Feature Importance</h2>
+                        <div id="feature-importance-plot"></div>
+                        <script>
+                            var graphs = {{ feature_importance_plot | safe }};
+                            Plotly.newPlot('feature-importance-plot', graphs.data, graphs.layout);
+                        </script>
+                    </div>
+                    {% endif %}
+
+                    <!-- Back Button -->
+                    <div class="text-center pt-4">
+                        <a href="/"
+                            class="inline-block bg-gray-600 text-white py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors duration-200">
+                            Make Another Prediction
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
